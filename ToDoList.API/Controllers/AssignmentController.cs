@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ToDoList.API.ViewModels.Assignment;
 using ToDoList.Application.DTOs.Assignment;
@@ -13,12 +12,10 @@ namespace ToDoList.API.Controllers;
 public class AssignmentController : ControllerBase
 {
     private readonly IAssignmentService _assignmentService;
-    private readonly IMapper _mapper;
 
-    public AssignmentController(IAssignmentService assignmentService, IMapper mapper)
+    public AssignmentController(IAssignmentService assignmentService)
     {
         _assignmentService = assignmentService;
-        _mapper = mapper;
     }
 
     [HttpGet("{id:guid}", Name = "get-assignment")]
