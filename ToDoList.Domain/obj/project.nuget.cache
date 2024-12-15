@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "8rPuj0Ha2qg=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nayet\\RiderProjects\\ToDoList\\ToDoList.Domain\\ToDoList.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nayet\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512"
+  ],
+  "logs": []
+}
