@@ -8,26 +8,26 @@ using ToDoList.Application.DTOs.Auth;
 using ToDoList.Application.DTOs.User;
 using ToDoList.Application.Interfaces;
 using ToDoList.Domain.Entities;
-using ToDoList.Domain.Interfaces.Repositories;
+using ToDoList.Domain.Interfaces;
 
 namespace ToDoList.Application.Services;
 
 public class AuthService : IAuthService
 {
-    private readonly IUserRepository _userRepository;
+    private readonly IUnitOfWork _unitOfWork;
     private readonly IPasswordHasher<User> _passwordHasher;
     private readonly IConfiguration _configuration;
 
-    public AuthService(IUserRepository userRepository, IPasswordHasher<User> passwordHasher, IConfiguration configuration)
+    public AuthService(IUnitOfWork unitOfWork, IPasswordHasher<User> passwordHasher, IConfiguration configuration)
     {
-        _userRepository = userRepository;
+        _unitOfWork = unitOfWork;
         _passwordHasher = passwordHasher;
         _configuration = configuration;
     }
     
     public async Task<TokenDto?> LoginAsync(LoginDto loginDto)
     {
-        var user = await _userRepository.GetByEmailAsync(loginDto.Email);
+        var user = await _unitOfWork.UserRepository.GetByEmailAsync(loginDto.Email);
         if (user is null)
         {
             return null;
@@ -44,14 +44,15 @@ public class AuthService : IAuthService
 
     public async Task<TokenDto?> RegisterAsync(RegisterDto registerDto)
     {
-        if (!await _userRepository.IsEmailAvailableAsync(registerDto.Email))
+        if (!await _unitOfWork.UserRepository.IsEmailAvailableAsync(registerDto.Email))
         {
             return null;
         }
 
         var user = new User(registerDto.Name, registerDto.Email, registerDto.Password);
         user.ChangePassword(_passwordHasher.HashPassword(user, registerDto.Password));
-        _userRepository.Create(user);
+        _unitOfWork.UserRepository.Create(user);
+        await _unitOfWork.CommitAsync();
         return GenerateAccessToken(user);
     }
     
@@ -84,7 +85,7 @@ public class AuthService : IAuthService
             {
                 Id = user.Id,
                 Name = user.Name,
-                Email = user.Email,
+                Email = user.Email
             }
         };
     }

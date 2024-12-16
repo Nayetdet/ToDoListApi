@@ -10,7 +10,7 @@ public sealed class AssignmentList : BaseEntity
     // EF Relations
     public User User { get; private set; } = null!;
     public ICollection<Assignment> Assignments { get; private set; } = null!;
-
+    
     public AssignmentList(string name, Guid userId)
     {
         Name = name;

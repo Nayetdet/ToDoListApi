@@ -9,6 +9,8 @@ namespace ToDoList.API.ViewModels.Assignment
         [MaxLength(255, ErrorMessage = "Description must not exceed 255 characters")]
         public string Description { get; set; } = null!;
 
+        public Guid UserId { get; set; }
+        
         public Guid? AssignmentListId { get; set; }
 
         public DateTime? Deadline { get; set; }
@@ -18,6 +20,7 @@ namespace ToDoList.API.ViewModels.Assignment
             return new AssignmentDto
             {
                 Description = Description,
+                UserId = UserId,
                 AssignmentListId = AssignmentListId,
                 Deadline = Deadline,
             };

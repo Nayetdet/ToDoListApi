@@ -1,0 +1,16 @@
+/home/joaopedro/RiderProjects/ToDoListApi/ToDoList.Application/bin/Debug/net8.0/ToDoList.Application.deps.json
+/home/joaopedro/RiderProjects/ToDoListApi/ToDoList.Application/bin/Debug/net8.0/ToDoList.Application.dll
+/home/joaopedro/RiderProjects/ToDoListApi/ToDoList.Application/bin/Debug/net8.0/ToDoList.Application.pdb
+/home/joaopedro/RiderProjects/ToDoListApi/ToDoList.Application/bin/Debug/net8.0/ToDoList.Domain.dll
+/home/joaopedro/RiderProjects/ToDoListApi/ToDoList.Application/bin/Debug/net8.0/ToDoList.Domain.pdb
+/home/joaopedro/RiderProjects/ToDoListApi/ToDoList.Application/obj/Debug/net8.0/ToDoList.Application.csproj.AssemblyReference.cache
+/home/joaopedro/RiderProjects/ToDoListApi/ToDoList.Application/obj/Debug/net8.0/ToDoList.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/joaopedro/RiderProjects/ToDoListApi/ToDoList.Application/obj/Debug/net8.0/ToDoList.Application.AssemblyInfoInputs.cache
+/home/joaopedro/RiderProjects/ToDoListApi/ToDoList.Application/obj/Debug/net8.0/ToDoList.Application.AssemblyInfo.cs
+/home/joaopedro/RiderProjects/ToDoListApi/ToDoList.Application/obj/Debug/net8.0/ToDoList.Application.csproj.CoreCompileInputs.cache
+/home/joaopedro/RiderProjects/ToDoListApi/ToDoList.Application/obj/Debug/net8.0/ToDoList.Application.sourcelink.json
+/home/joaopedro/RiderProjects/ToDoListApi/ToDoList.Application/obj/Debug/net8.0/ToDoList.ED2F2C6F.Up2Date
+/home/joaopedro/RiderProjects/ToDoListApi/ToDoList.Application/obj/Debug/net8.0/ToDoList.Application.dll
+/home/joaopedro/RiderProjects/ToDoListApi/ToDoList.Application/obj/Debug/net8.0/refint/ToDoList.Application.dll
+/home/joaopedro/RiderProjects/ToDoListApi/ToDoList.Application/obj/Debug/net8.0/ToDoList.Application.pdb
+/home/joaopedro/RiderProjects/ToDoListApi/ToDoList.Application/obj/Debug/net8.0/ref/ToDoList.Application.dll

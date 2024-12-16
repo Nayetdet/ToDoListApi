@@ -14,7 +14,7 @@ public sealed class Assignment : BaseEntity
     // EF Relations
     public User User { get; private set; } = null!;
     public AssignmentList AssignmentList { get; private set; } = null!;
-
+    
     public Assignment(string description, Guid userId, Guid? assignmentListId, DateTime? deadline)
     {
         Description = description;

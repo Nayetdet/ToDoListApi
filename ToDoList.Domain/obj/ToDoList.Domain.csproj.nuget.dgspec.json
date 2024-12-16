@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nayet\\RiderProjects\\ToDoList\\ToDoList.Domain\\ToDoList.Domain.csproj": {}
+    "/home/joaopedro/RiderProjects/ToDoListApi/ToDoList.Domain/ToDoList.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nayet\\RiderProjects\\ToDoList\\ToDoList.Domain\\ToDoList.Domain.csproj": {
+    "/home/joaopedro/RiderProjects/ToDoListApi/ToDoList.Domain/ToDoList.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nayet\\RiderProjects\\ToDoList\\ToDoList.Domain\\ToDoList.Domain.csproj",
+        "projectUniqueName": "/home/joaopedro/RiderProjects/ToDoListApi/ToDoList.Domain/ToDoList.Domain.csproj",
         "projectName": "ToDoList.Domain",
-        "projectPath": "C:\\Users\\nayet\\RiderProjects\\ToDoList\\ToDoList.Domain\\ToDoList.Domain.csproj",
-        "packagesPath": "C:\\Users\\nayet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nayet\\RiderProjects\\ToDoList\\ToDoList.Domain\\obj\\",
+        "projectPath": "/home/joaopedro/RiderProjects/ToDoListApi/ToDoList.Domain/ToDoList.Domain.csproj",
+        "packagesPath": "/home/joaopedro/.nuget/packages/",
+        "outputPath": "/home/joaopedro/RiderProjects/ToDoListApi/ToDoList.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nayet\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/joaopedro/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -64,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
